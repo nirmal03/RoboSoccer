@@ -8,9 +8,9 @@ This repository pertains to the files for the B.Tech Project for the Autonomous 
 
 [Through analysis](./Documentation/RoboSoccer_Analysis_Combined.pdf) of the field and technologies used in various RoboSoccer bots as well as competitions
 
-- [Various kinds and Complexities](./Documentation/"Part I_Various kinds and Complexities.pdf")
-- [Communication Methods and Strategies](./Documentation/"Part II_Communication Protocols and Strategies.pdf")
-- [The Past, The Present and The Future](./Documentation/"Part III_The Past, The Present and The Future.pdf")
+- [Various kinds and Complexities](https://github.com/AvatarSenju/RoboSoccer/blob/master/Documentation/Part%20I_%20Various%20kinds%20and%20Complexities.pdf)
+- [Communication Methods and Strategies](https://github.com/AvatarSenju/RoboSoccer/blob/master/Documentation/Part%20II_%20Communication%20Protocols%20and%20Strategies.pdf)
+- [The Past, The Present and The Future](https://github.com/AvatarSenju/RoboSoccer/blob/master/Documentation/Part%20III_%20The%20Past%2C%20The%20Present%20and%20The%20Future.pdf)
 
 ### step 2: Choosing the right approach
 
