@@ -8,6 +8,7 @@ from collections import deque
 cap = None
 
 
+# modify to get video over server-client connection
 def init():
     global cap
     cap = cv2.VideoCapture(1)

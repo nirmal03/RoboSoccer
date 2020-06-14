@@ -95,12 +95,19 @@ def getGoalPosition():
     return (x, y)
 
 
-def getAngle(ball):
-    pass
+# modify to implement trignometry
+def getAngle(obj):
+    x, y = obj
+    if(x == -1 or y == -1):
+        return None
+
+# modify to use focal length
 
 
-def getDistance(ball):
-    pass
+def getDistance(obj):
+    if(x == -1 or y == -1):
+        return None
+    return y
 
 
 # init()
@@ -113,7 +120,7 @@ def getDistance(ball):
 
 
 init()
-x, y = getGoalPosition()
+x, y = getBallPosition()
 end()
 # if(x==None or)
 print(x, y)

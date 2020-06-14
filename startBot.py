@@ -22,12 +22,14 @@ if ball in captured range
 """
 
 
-from moveBot import rotate_left, rotate_right, moveForward
+from moveBot import rotate_left, rotate_right, moveForward, moveStop
 from findPosition import getAngle, getBallPosition, getDistance, getGoalPosition
 from capture import init, getFrame, end
 
 init()
 
+
+# further improve implementation with fixed movement instead of continuous movement
 
 while(True):
     # captured = False
@@ -45,30 +47,32 @@ while(True):
         angle = getAngle(ball)
         if(angle != None):
             if(angle < -10):
-                rotate_left(abs(angle))
+                rotate_left()
             elif(angle > +10):
-                rotate_right(abs(angle))
+                rotate_right()
             else:
+
                 if(ballDist <= capturedDistance):
                     captured = True
+                    moveStop()
                 else:
                     moveForward()
                 # dist = getDistance(ball)
                 # while(dist > capturedDistance):
                 #     moveForward()
         else:
-            rotate_left(90)
+            rotate_left()
 
     else:
         angle = getAngle(goal)
         if(angle != None):
             if(angle < -10):
-                rotate_left(abs(angle))
+                rotate_left()
             elif(angle > +10):
-                rotate_right(abs(angle))
+                rotate_right()
             else:
                 moveForward()
         else:
-            rotate_left(90)
+            rotate_left()
 
 end()
