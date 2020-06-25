@@ -2,7 +2,7 @@
 
 This repository pertains to the files for the B.Tech Project for the Autonomous RoboSoccer
 
-## Steps Plotted towards Goal
+## Steps towards Objective
 
 ### step 1: Knowing the Playfield
 
@@ -20,6 +20,7 @@ After the Analysis was complete, we were familiar with most of the ways we could
 
 Assumptions :
 
+- Detection using one camera only
 - 1 vs 1 arrangement
 - Color of Ball is fixed and known
 - Color of Goal is fixed and known
@@ -34,7 +35,8 @@ Move the bot as per distance and angle according to following algorithm
 
 if ball not in captured range
     if ball in vision
-        rotate till ball in center of vision
+        rotate left or right as per position
+        till ball in center of vision
         move towards ball till in captured range
     else
         rotate till ball in vision
@@ -42,12 +44,16 @@ if ball not in captured range
 
 if ball in captured range
     if goal in vision
-        rotate till goal in center of vision
+        rotate left or right as per position
+        till goal in center of vision
         move towards goal till in captured range
     else
         rotate till goal in vision
 
 ```
+
+Currently using continuous movement approach with real time processing of the video input.
+(Images to be updated)
 
 ### step 4: Transfer of Data between Bot and Central Compute unit
 
@@ -72,7 +78,11 @@ To be Updated
 
 ##### Setup
 
-To be Updated
+- Main function [startBot.py](https://github.com/AvatarSenju/RoboSoccer/blob/master/startBot.py)
+- video input using [capture.py](https://github.com/AvatarSenju/RoboSoccer/blob/master/capture.py)
+- get information from frame using [findPosition.py](https://github.com/AvatarSenju/RoboSoccer/blob/master/findPosition.py)
+- send movement output to GPIO pins using [moveBot.py](https://github.com/AvatarSenju/RoboSoccer/blob/master/moveBot.py)
+  To be Updated
 
 ##### Note:
 

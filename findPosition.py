@@ -101,9 +101,8 @@ def getAngle(obj):
     if(x == -1 or y == -1):
         return None
 
+
 # modify to use focal length
-
-
 def getDistance(obj):
     if(x == -1 or y == -1):
         return None
