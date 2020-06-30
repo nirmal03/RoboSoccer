@@ -6,19 +6,19 @@ continuous movement
 
 
 def rotate_left():
-    pass
+    print("Rotating Left")
 
 
 def rotate_right():
-    pass
+	print("Rotating Right")
 
 
 def moveForward():
-    pass
+	print("Moving Forward")
 
 
 def moveStop():
-    pass
+	print("Stop")
 
 
 """
@@ -26,13 +26,13 @@ fixed value movement
 """
 
 
-def rotate_left(angle):
-    pass
+# def rotate_left(angle):
+# 	print("Rotating Left with angle")
 
 
-def rotate_right(angle):
-    pass
+# def rotate_right(angle):
+# 	print("Rotating Left with angle")
 
 
-def moveForward(dist):
-    pass
+# def moveForward(dist):
+#     print("Rotating Left with angle")

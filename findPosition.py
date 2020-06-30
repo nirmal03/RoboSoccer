@@ -100,6 +100,13 @@ def getAngle(obj):
     x, y = obj
     if(x == -1 or y == -1):
         return None
+    elif(x>=325 and x<=375):
+        return 0
+    elif(x<325):
+        return -11
+    elif(x>375):
+        return 11
+
 
 
 # modify to use focal length

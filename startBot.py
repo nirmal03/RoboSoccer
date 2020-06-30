@@ -32,16 +32,16 @@ init()
 # further improve implementation with fixed movement instead of continuous movement
 
 while(True):
-    # captured = False
+    captured = False
     capturedDistance = 5
     goalDistance = 2
     ball = getBallPosition()
     goal = getGoalPosition()
     ballDist = getDistance(ball)
     goalDist = getDistance(goal)
-    if(ballDist > capturedDistance):
+    if(ballDist != None and ballDist > capturedDistance):
         captured = False
-    if(captured and goalDist <= goalDistance):
+    if(goalDist != None and captured and goalDist <= goalDistance):
         break
     if(not captured):
         angle = getAngle(ball)

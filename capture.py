@@ -11,7 +11,7 @@ cap = None
 # modify to get video over server-client connection
 def init():
     global cap
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
 
 
 def getFrame():
@@ -37,7 +37,7 @@ def findByColor(hsv_low, hsv_high):
 
     hsv_supremum = np.array(hsv_high)
 
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     ret, frame = cap.read()
 
     if not ret:
